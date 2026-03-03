@@ -1,0 +1,61 @@
+/*
+  Kommo Message Tags - estilos da extensão
+  ------------------------------------------------------------
+  Estas classes controlam a aparência do botão "+ Tag" e das
+  tags renderizadas ao lado/abaixo das mensagens.
+*/
+
+/* Container principal de UI por mensagem */
+.kmt-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  font-family: Arial, sans-serif;
+}
+
+/* Botão para adicionar nova tag */
+.kmt-add-btn {
+  border: 1px solid #0b66ff;
+  background: #0b66ff;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1;
+  padding: 6px 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.kmt-add-btn:hover {
+  background: #0751cc;
+  border-color: #0751cc;
+}
+
+/* Área que contém as tags da mensagem */
+.kmt-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Tag individual exibida como "chip" */
+.kmt-tag-chip {
+  display: inline-flex;
+  align-items: center;
+  background: #eef4ff;
+  color: #0b3f91;
+  border: 1px solid #bfd4ff;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Texto padrão quando uma mensagem não possui tags */
+.kmt-empty {
+  font-size: 11px;
+  color: #7b8190;
+  font-style: italic;
+}

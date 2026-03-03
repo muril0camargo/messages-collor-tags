@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Kommo Message Tags",
+  "description": "Permite adicionar tags personalizadas às mensagens na interface de conversa da Kommo CRM.",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*.kommo.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
